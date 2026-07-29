@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<extentreports>
+
+    <configuration>
+
+        <!-- Theme -->
+        <theme>dark</theme>
+
+        <!-- Report Name -->
+        <reportName>Cucumber Extent Report</reportName>
+
+        <!-- Browser Title -->
+        <documentTitle>Automation Test Report</documentTitle>
+
+        <!-- Encoding -->
+        <encoding>UTF-8</encoding>
+
+        <!-- Protocol -->
+        <protocol>https</protocol>
+
+        <!-- Charts -->
+        <enableTimeline>true</enableTimeline>
+        <testViewChartLocation>bottom</testViewChartLocation>
+
+        <!-- Time Format -->
+        <timeStampFormat>dd-MMM-yyyy HH:mm:ss</timeStampFormat>
+
+        <!-- Custom CSS -->
+        <styles>
+            <![CDATA[
+                .nav-wrapper {
+                    background-color: #1f3c88;
+                }
+            ]]>
+        </styles>
+
+        <!-- Custom JavaScript -->
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                    // Custom JavaScript
+                });
+            ]]>
+        </scripts>
+
+    </configuration>
+
+</extentreports>
