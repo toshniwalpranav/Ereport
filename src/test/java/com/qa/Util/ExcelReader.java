@@ -1,8 +1,5 @@
 package com.qa.Util;
 
-public class ExcelReader {
-	
-	package com.qa.util;
 
 	import java.io.FileInputStream;
 	import java.io.IOException;
@@ -18,6 +15,7 @@ public class ExcelReader {
 	        Sheet sheet = workbook.getSheet(sheetName);
 
 	        List<Map<String, String>> data = new ArrayList<>();
+	        //A List stores multiple objects in order.                                   //Creates an empty list.
 
 	        Row headerRow = sheet.getRow(0);
 
@@ -42,4 +40,4 @@ public class ExcelReader {
 	    }
 	}
 
-}
+
