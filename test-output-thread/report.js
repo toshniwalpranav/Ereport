@@ -1,4 +1,4 @@
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"8ab14ce4-1ce1-4d1c-a0df-2984a8da1c07","feature":"Print","scenario":"Print","start":1785400573551,"group":22,"content":"","tags":"","end":1785400574982,"className":"passed"},{"id":"64ed5ff2-45f1-426d-968b-b373f303b109","feature":"Print","scenario":"location","start":1785400574892,"group":23,"content":"","tags":"","end":1785400574960,"className":"passed"}]);
-CucumberHTML.timelineGroups.pushArray([{"id":22,"content":"Thread[#22,TestNG-PoolService-1,5,main]"},{"id":23,"content":"Thread[#23,TestNG-PoolService-2,5,main]"}]);
+CucumberHTML.timelineItems.pushArray([{"id":"0682c4fc-613e-4a94-b882-ed4942c91884","feature":"Contact Us Feature","scenario":"Contact Us scenario with differnet set of data","start":1785564698745,"group":22,"content":"","tags":"","end":1785564733458,"className":"passed"}]);
+CucumberHTML.timelineGroups.pushArray([{"id":22,"content":"Thread[#22,TestNG-PoolService-1,5,main]"}]);
 });

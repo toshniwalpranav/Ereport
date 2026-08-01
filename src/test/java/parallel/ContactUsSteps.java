@@ -24,7 +24,7 @@ public class ContactUsSteps {
     }
 
     @When("user fill the form from given sheetname {string} and rownumber {int}")
-    public void user_fill_the_form_from_given_sheetname_and_rownumber(String sheetName, Integer rowNumber)
+    public void user_fill_the_form_from_given_sheetname_and_rownumber(String sheetName, int rowNumber)
             throws IOException {
 
         ExcelReader reader = new ExcelReader();
@@ -32,16 +32,15 @@ public class ContactUsSteps {
         List<Map<String, String>> testData =
                 reader.getData("src/test/resources/TestData.xlsx", sheetName);
 
-        String fullName = testData.get(rowNumber).get("FullName");
-        String email = testData.get(rowNumber).get("Email");
-        String currentAddress = testData.get(rowNumber).get("CurrentAddress");
-        String permanentAddress = testData.get(rowNumber).get("PermanentAddress");
+        Map<String, String> data = testData.get(rowNumber);
+        //testData contains all rows.  get(rowNumber) selects one row.
 
         contactUsPage.fillContactUsForm(
-                fullName,
-                email,
-                currentAddress,
-                permanentAddress);
+                data.get("FullName"),
+                data.get("Email"),
+                data.get("CurrentAddress"),
+                data.get("PermanentAddress")
+        );
     }
 
     @Then("user click on send button")
